@@ -282,6 +282,34 @@ h3 {
     var(--blue-deep);
 }
 
+.page-title-banner {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  min-height: 46vh;
+  padding: clamp(110px, 14vw, 160px) clamp(18px, 5vw, 72px) clamp(48px, 7vw, 76px);
+  color: var(--white);
+  background-size: cover;
+  background-position: center;
+}
+
+.page-title-banner::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(0deg, rgba(4, 24, 71, 0.92), rgba(7, 55, 145, 0.42) 60%, rgba(7, 55, 145, 0.18));
+}
+
+.page-title-banner .section-heading {
+  position: relative;
+  margin-bottom: 0;
+}
+
+.page-title-banner .eyebrow {
+  color: var(--gold);
+}
+
 .founder-hero h1 {
   max-width: 760px;
 }
