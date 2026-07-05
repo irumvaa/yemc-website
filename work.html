@@ -4,45 +4,44 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Our Work | YEMC</title>
-  <meta name="description" content="The entrepreneurship, leadership, English, and teamwork programs run by Young Entrepreneurs Mugara Changemakers (YEMC) in Mugara, Burundi.">
+  <meta name="description" content="The programs and activities of Young Entrepreneurs Mugara Changemakers (YEMC) in Mugara, Burundi.">
   <link rel="icon" href="assets/images/yemc-logo.jpg">
   <link rel="stylesheet" href="styles.css">
+  <script defer src="translations.js"></script>
   <script defer src="script.js"></script>
 </head>
 <body>
   <header class="site-header founder-header is-scrolled" data-header>
     <a class="brand" href="index.html" aria-label="YEMC home">
       <img class="brand-logo" src="assets/images/yemc-logo.jpg" alt="">
-      <span>
-        <strong>YEMC</strong>
-        <small>Mugara Changemakers</small>
-      </span>
+      <span><strong>YEMC</strong><small>Mugara Changemakers</small></span>
     </a>
-
     <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" data-nav-toggle>
       <span class="sr-only">Toggle navigation</span>
-      <span></span>
-      <span></span>
-      <span></span>
+      <span></span><span></span><span></span>
     </button>
-
     <nav class="site-nav" id="site-nav" data-nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="mission.html">Mission</a>
-      <a href="values.html">Values</a>
-      <a href="work.html">Our Work</a>
-      <a href="founder.html">Founder</a>
-      <a href="newsletter.html">Newsletter</a>
-      <a href="contact.html">Contact</a>
+      <a href="index.html" data-i18n="nav-home">Home</a>
+      <a href="about.html" data-i18n="nav-about">About</a>
+      <a href="mission.html" data-i18n="nav-mission">Mission</a>
+      <a href="values.html" data-i18n="nav-values">Values</a>
+      <a href="work.html" data-i18n="nav-work">Our Work</a>
+      <a href="team.html" data-i18n="nav-team">Team</a>
+      <a href="founder.html" data-i18n="nav-founder">Founder</a>
+      <a href="newsletter.html" data-i18n="nav-newsletter">Newsletter</a>
+      <a href="contact.html" data-i18n="nav-contact">Contact</a>
     </nav>
+    <div class="lang-switch" aria-label="Language selector">
+      <button class="lang-btn active" data-lang="en">EN</button>
+      <button class="lang-btn" data-lang="fr">FR</button>
+    </div>
   </header>
 
   <main>
     <section class="page-title-banner" style="background-image: url('assets/images/page-bg-classroom-circle.jpg');">
       <div class="section-heading">
-        <p class="eyebrow">The Work We Do</p>
-        <h2>Learning, confidence, teamwork, and opportunity.</h2>
+        <p class="eyebrow" data-i18n="work-eyebrow">The Work We Do</p>
+        <h2 data-i18n="work-banner-h2">Learning, confidence, teamwork, and opportunity.</h2>
       </div>
     </section>
 
@@ -50,52 +49,101 @@
       <div class="work-grid">
         <article class="work-card">
           <span>01</span>
-          <h3>Entrepreneurship</h3>
-          <p>We help youth understand business ideas, problem solving, creativity, and how to turn small opportunities into action.</p>
+          <h3 data-i18n="work1-h3">Entrepreneurship</h3>
+          <p data-i18n="work1-p">We help youth understand business ideas, problem solving, creativity, and how to turn small opportunities into action.</p>
         </article>
         <article class="work-card">
           <span>02</span>
-          <h3>Leadership</h3>
-          <p>We build confidence, responsibility, communication, and the courage to serve the community with purpose.</p>
+          <h3 data-i18n="work2-h3">Leadership</h3>
+          <p data-i18n="work2-p">We build confidence, responsibility, communication, and the courage to serve the community with purpose.</p>
         </article>
         <article class="work-card">
           <span>03</span>
-          <h3>English</h3>
-          <p>We create space for young people to practice English, express themselves, and connect with wider opportunities.</p>
+          <h3 data-i18n="work3-h3">English</h3>
+          <p data-i18n="work3-p">We create space for young people to practice English, express themselves, and connect with wider opportunities.</p>
         </article>
         <article class="work-card">
           <span>04</span>
-          <h3>Teamwork</h3>
-          <p>We use group exercises and shared projects to help youth learn collaboration, critical thinking, and trust.</p>
+          <h3 data-i18n="work4-h3">Teamwork</h3>
+          <p data-i18n="work4-p">We use group exercises and shared projects to help youth learn collaboration, critical thinking, and trust.</p>
         </article>
       </div>
     </section>
 
     <section class="impact-band">
       <div>
-        <p class="eyebrow">Our Journey</p>
-        <h2>Two months of learning, growth, and transformation.</h2>
+        <p class="eyebrow" data-i18n="impact-eyebrow">Our Journey</p>
+        <h2 data-i18n="impact-h2">Two months of learning, growth, and transformation.</h2>
       </div>
       <div class="impact-grid">
-        <div>
-          <strong>3</strong>
-          <span>Intensive weeks of first activities</span>
-        </div>
-        <div>
-          <strong>2</strong>
-          <span>Months of youth engagement</span>
-        </div>
-        <div>
-          <strong>4</strong>
-          <span>Core learning areas</span>
-        </div>
+        <div><strong>3</strong><span data-i18n="impact1-span">Intensive weeks of first activities</span></div>
+        <div><strong>2</strong><span data-i18n="impact2-span">Months of youth engagement</span></div>
+        <div><strong>4</strong><span data-i18n="impact3-span">Core learning areas</span></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-heading">
+        <p class="eyebrow" data-i18n="activities-eyebrow">Our Activities</p>
+        <h2 data-i18n="activities-h2">What we have done so far.</h2>
+      </div>
+      <div class="activities-grid">
+        <article class="activity-card">
+          <div class="activity-number">01</div>
+          <div>
+            <h3 data-i18n="act1-title">Leadership &amp; Entrepreneurship Training with Francois Regis Iranzi</h3>
+            <p data-i18n="act1-p">Members of YEMC began attending leadership and entrepreneurship sessions with Francois Regis Iranzi, a YALI alumnus and founder of Rise and Shine for Change. He has trained more than 15 young people in our program over 3 months. After the sessions, 3 members launched a start-up to produce palm oil and deliver it to rural areas that lack palm trees.</p>
+          </div>
+        </article>
+        <article class="activity-card">
+          <div class="activity-number">02</div>
+          <div>
+            <h3 data-i18n="act2-title">English Teaching with Youth Emerging English Club</h3>
+            <p data-i18n="act2-p">In collaboration with the Youth Emerging English Club in Mugara, YEMC began teaching 25 young people English during a two-month holiday, training them in reading, writing, speaking, and listening.</p>
+          </div>
+        </article>
+        <article class="activity-card">
+          <div class="activity-number">03</div>
+          <div>
+            <h3 data-i18n="act3-title">Community Visits</h3>
+            <p data-i18n="act3-p">YEMC members joined the Youth Emerging English Club to visit sick community members in Mugara, showing love and kindness. 15 members later returned for an extended visit, continuing to demonstrate compassion and care.</p>
+          </div>
+        </article>
+        <article class="activity-card">
+          <div class="activity-number">04</div>
+          <div>
+            <h3 data-i18n="act4-title">Tujenge Scholars Volunteer Teaching</h3>
+            <p data-i18n="act4-p">Three Tujenge Scholars volunteered at YEMC to teach Leadership and Communication during a two-week holiday, sharing expertise from the intensive 18-month Tujenge Africa Foundation pre-university leadership curriculum.</p>
+          </div>
+        </article>
+        <article class="activity-card">
+          <div class="activity-number">05</div>
+          <div>
+            <h3 data-i18n="act5-title">Digital Tools &amp; Opportunities Training</h3>
+            <p data-i18n="act5-p">YEMC trained 15 members in digital tools including LinkedIn and the opportunity application process. As a result, Kelvin Ishemezwe applied and was admitted to the Tujenge Africa Foundation — a major achievement for the organization.</p>
+          </div>
+        </article>
+        <article class="activity-card">
+          <div class="activity-number">06</div>
+          <div>
+            <h3 data-i18n="act6-title">December 2025 Outreach — Hope and Dignity</h3>
+            <p data-i18n="act6-p">On December 22, 2025, YEMC in collaboration with Tujenge Scholars Cohort 9, through fundraising, provided reusable sanitary pads and food allowances to single mothers in Mugara, Rumonge. Joy, compassion, and love were shared during this Christmas season.</p>
+          </div>
+        </article>
+        <article class="activity-card">
+          <div class="activity-number">07</div>
+          <div>
+            <h3 data-i18n="act7-title">April 2026 Youth Forum — Personal Development &amp; Design Thinking</h3>
+            <p data-i18n="act7-p">In April 2026, YEMC trained 40 young people in personal development sessions and design thinking. Youth presented ideas for improving the Mugara community and shared their perspectives on building the better Mugara they want.</p>
+          </div>
+        </article>
       </div>
     </section>
 
     <section class="section gallery">
       <div class="section-heading">
-        <p class="eyebrow">Pictures</p>
-        <h2>Moments from the YEMC community.</h2>
+        <p class="eyebrow" data-i18n="gallery-eyebrow">Pictures</p>
+        <h2 data-i18n="gallery-h2">Moments from the YEMC community.</h2>
       </div>
       <div class="gallery-grid">
         <img src="assets/images/yemc-youth-campus.jpeg" alt="YEMC youth gathered outside a school building">
@@ -103,16 +151,15 @@
         <img src="assets/images/yemc-classroom.jpeg" alt="YEMC young leaders standing in a classroom">
         <img src="assets/images/yemc-collab-writing.jpg" alt="Three YEMC youth collaborating on a writing activity outdoors">
       </div>
-      <p class="note">Add more YEMC photos here as the movement grows.</p>
     </section>
   </main>
 
   <footer class="site-footer">
     <p>&copy; <span data-year></span> Young Entrepreneurs Mugara Changemakers. All rights reserved.</p>
     <div>
-      <a href="index.html">Home</a>
-      <a href="founder.html">Founder</a>
-      <a href="mailto:yemchangemakers@gmail.com">Email YEMC</a>
+      <a href="index.html" data-i18n="footer-home">Home</a>
+      <a href="founder.html" data-i18n="footer-founder">Founder</a>
+      <a href="mailto:yemchangemakers@gmail.com" data-i18n="footer-email">Email YEMC</a>
     </div>
   </footer>
 </body>

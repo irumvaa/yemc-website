@@ -7,55 +7,52 @@
   <meta name="description" content="Read YEMC stories, monthly updates, and community reflections from Mugara, Rumonge, Burundi.">
   <link rel="icon" href="assets/images/yemc-logo.jpg">
   <link rel="stylesheet" href="styles.css">
+  <script defer src="translations.js"></script>
   <script defer src="script.js"></script>
 </head>
 <body>
   <header class="site-header founder-header is-scrolled" data-header>
     <a class="brand" href="index.html" aria-label="YEMC home">
       <img class="brand-logo" src="assets/images/yemc-logo.jpg" alt="">
-      <span>
-        <strong>YEMC</strong>
-        <small>Mugara Changemakers</small>
-      </span>
+      <span><strong>YEMC</strong><small>Mugara Changemakers</small></span>
     </a>
-
     <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" data-nav-toggle>
       <span class="sr-only">Toggle navigation</span>
-      <span></span>
-      <span></span>
-      <span></span>
+      <span></span><span></span><span></span>
     </button>
-
     <nav class="site-nav" id="site-nav" data-nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="mission.html">Mission</a>
-      <a href="values.html">Values</a>
-      <a href="work.html">Our Work</a>
-      <a href="founder.html">Founder</a>
-      <a href="newsletter.html">Newsletter</a>
-      <a href="contact.html">Contact</a>
+      <a href="index.html" data-i18n="nav-home">Home</a>
+      <a href="about.html" data-i18n="nav-about">About</a>
+      <a href="mission.html" data-i18n="nav-mission">Mission</a>
+      <a href="values.html" data-i18n="nav-values">Values</a>
+      <a href="work.html" data-i18n="nav-work">Our Work</a>
+      <a href="team.html" data-i18n="nav-team">Team</a>
+      <a href="founder.html" data-i18n="nav-founder">Founder</a>
+      <a href="newsletter.html" data-i18n="nav-newsletter">Newsletter</a>
+      <a href="contact.html" data-i18n="nav-contact">Contact</a>
     </nav>
+    <div class="lang-switch" aria-label="Language selector">
+      <button class="lang-btn active" data-lang="en">EN</button>
+      <button class="lang-btn" data-lang="fr">FR</button>
+    </div>
   </header>
 
   <main>
     <section class="newsletter-page-hero" style="background-image: url('assets/images/yemc-circle-talk.jpg'); background-size: cover; background-position: center;">
       <div>
-        <p class="eyebrow">YEMC Newsletter</p>
-        <h1>Stories from Mugara changemakers.</h1>
-        <p>
-          Read updates from YEMC activities, community visits, learning sessions, and youth-led service in Burundi.
-        </p>
+        <p class="eyebrow" data-i18n="newsletter-eyebrow">YEMC Newsletter</p>
+        <h1 data-i18n="newsletter-h1">Stories from Mugara changemakers.</h1>
+        <p data-i18n="newsletter-tagline">Read updates from YEMC activities, community visits, learning sessions, and youth-led service in Burundi.</p>
         <div class="hero-actions">
-          <a class="button primary" href="#stories">Read Latest Story</a>
-          <a class="button secondary founder-secondary" href="https://www.linkedin.com/in/young-entrepreneurs-mugara-changemakers-yemc-7a089b392/recent-activity/all/">Follow on LinkedIn</a>
+          <a class="button primary" href="#stories" data-i18n="newsletter-btn-read">Read Latest Story</a>
+          <a class="button secondary founder-secondary" href="https://www.linkedin.com/in/young-entrepreneurs-mugara-changemakers-yemc-7a089b392/recent-activity/all/" data-i18n="newsletter-btn-linkedin">Follow on LinkedIn</a>
         </div>
       </div>
       <form class="newsletter-form newsletter-hero-form" data-newsletter-form>
-        <label for="newsletter-page-email">Sign up for monthly updates</label>
+        <label for="newsletter-page-email" data-i18n="newsletter-signup-label">Sign up for monthly updates</label>
         <div class="newsletter-row">
           <input id="newsletter-page-email" type="email" name="email" placeholder="you@example.com" required>
-          <button class="button primary" type="submit">Sign Up</button>
+          <button class="button primary" type="submit" data-i18n="newsletter-signup-btn">Sign Up</button>
         </div>
         <p class="form-message" data-form-message></p>
       </form>
@@ -63,7 +60,7 @@
 
     <section class="section newsletter-stories" id="stories">
       <div class="section-heading">
-        <p class="eyebrow">Latest Story</p>
+        <p class="eyebrow" data-i18n="newsletter-stories-eyebrow">Latest Story</p>
         <h2>April 11-12 Youth Forum in Mugara.</h2>
       </div>
 
@@ -76,18 +73,10 @@
         <div class="newsletter-story-copy">
           <time datetime="2026-04-11">April 11-12</time>
           <h3>50 young minds gathered for personal development and design thinking</h3>
-          <p>
-            On April 11-12, YEMC brought together 50 young minds in Mugara, Rumonge, Burundi for a powerful Youth Forum focused on personal development and design thinking.
-          </p>
-          <p>
-            In a community where opportunities are often limited, these young people stepped forward with courage, identifying real challenges they face and boldly designing solutions for change. From education barriers to social issues, their ideas reflected resilience, creativity, and hope.
-          </p>
-          <p>
-            At YEMC, we believe in empowering youth and connecting them to opportunities they have never had access to. This forum was more than a training; it was a space for growth, collaboration, and transformation.
-          </p>
-          <p>
-            The energy, ideas, and commitment we witnessed remind us that the future of Mugara is in capable hands.
-          </p>
+          <p>On April 11-12, YEMC brought together 50 young minds in Mugara, Rumonge, Burundi for a powerful Youth Forum focused on personal development and design thinking.</p>
+          <p>In a community where opportunities are often limited, these young people stepped forward with courage, identifying real challenges they face and boldly designing solutions for change.</p>
+          <p>At YEMC, we believe in empowering youth and connecting them to opportunities they have never had access to. This forum was more than a training; it was a space for growth, collaboration, and transformation.</p>
+          <p>The energy, ideas, and commitment we witnessed remind us that the future of Mugara is in capable hands.</p>
         </div>
       </article>
 
@@ -99,18 +88,10 @@
         <div class="newsletter-story-copy">
           <time datetime="2025-12">December 2025</time>
           <h3>Spreading hope and dignity to girls and women in Mugara</h3>
-          <p>
-            In December 2025, YEMC spread hope and dignity to girls and women by providing reusable sanitary pads and food allowances in the Mugara community.
-          </p>
-          <p>
-            We stood together to uplift, empower, and remind every girl and woman that she is valued and capable of achieving her dreams.
-          </p>
-          <p>
-            This outreach was more than giving; it was about restoring confidence, strengthening resilience, and building a future where every woman rises with courage.
-          </p>
-          <p>
-            Together, we are creating change, one life at a time.
-          </p>
+          <p>In December 2025, YEMC spread hope and dignity to girls and women by providing reusable sanitary pads and food allowances in the Mugara community.</p>
+          <p>We stood together to uplift, empower, and remind every girl and woman that she is valued and capable of achieving her dreams.</p>
+          <p>This outreach was more than giving; it was about restoring confidence, strengthening resilience, and building a future where every woman rises with courage.</p>
+          <p>Together, we are creating change, one life at a time.</p>
         </div>
       </article>
 
@@ -122,23 +103,17 @@
         <div class="newsletter-story-copy">
           <time datetime="2026-06">Community Visit</time>
           <h3>A beautiful moment of sharing, learning, and connection</h3>
-          <p>
-            Few weeks ago, we had the honor of being invited by Kazoza Initiative Association to their activities in Kinama.
-          </p>
-          <p>
-            Together with Paulo from the San Filipino Foundation and some members of CHABHA Initiative, we had the opportunity to engage in meaningful moments and witness the talents of the children as they confidently expressed themselves.
-          </p>
-          <p>
-            Their activity, energy, and passion were truly inspiring, and we are grateful for this beautiful moment of sharing, learning, and connection.
-          </p>
+          <p>Few weeks ago, we had the honor of being invited by Kazoza Initiative Association to their activities in Kinama.</p>
+          <p>Together with Paulo from the San Filipino Foundation and some members of CHABHA Initiative, we had the opportunity to engage in meaningful moments and witness the talents of the children as they confidently expressed themselves.</p>
+          <p>Their activity, energy, and passion were truly inspiring, and we are grateful for this beautiful moment of sharing, learning, and connection.</p>
         </div>
       </article>
     </section>
 
     <section class="section newsletter-archive">
       <div>
-        <p class="eyebrow">Archive</p>
-        <h2>More YEMC stories will be added here.</h2>
+        <p class="eyebrow" data-i18n="newsletter-archive-eyebrow">Archive</p>
+        <h2 data-i18n="newsletter-archive-h2">More YEMC stories will be added here.</h2>
       </div>
       <div class="archive-grid">
         <article>
@@ -163,9 +138,9 @@
   <footer class="site-footer">
     <p>&copy; <span data-year></span> Young Entrepreneurs Mugara Changemakers. All rights reserved.</p>
     <div>
-      <a href="index.html">Home</a>
-      <a href="founder.html">Founder</a>
-      <a href="mailto:yemchangemakers@gmail.com">Email YEMC</a>
+      <a href="index.html" data-i18n="footer-home">Home</a>
+      <a href="founder.html" data-i18n="footer-founder">Founder</a>
+      <a href="mailto:yemchangemakers@gmail.com" data-i18n="footer-email">Email YEMC</a>
     </div>
   </footer>
 </body>

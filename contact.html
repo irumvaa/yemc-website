@@ -7,57 +7,54 @@
   <meta name="description" content="Get involved with Young Entrepreneurs Mugara Changemakers (YEMC) in Mugara, Rumonge, Burundi.">
   <link rel="icon" href="assets/images/yemc-logo.jpg">
   <link rel="stylesheet" href="styles.css">
+  <script defer src="translations.js"></script>
   <script defer src="script.js"></script>
 </head>
 <body>
   <header class="site-header founder-header is-scrolled" data-header>
     <a class="brand" href="index.html" aria-label="YEMC home">
       <img class="brand-logo" src="assets/images/yemc-logo.jpg" alt="">
-      <span>
-        <strong>YEMC</strong>
-        <small>Mugara Changemakers</small>
-      </span>
+      <span><strong>YEMC</strong><small>Mugara Changemakers</small></span>
     </a>
-
     <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" data-nav-toggle>
       <span class="sr-only">Toggle navigation</span>
-      <span></span>
-      <span></span>
-      <span></span>
+      <span></span><span></span><span></span>
     </button>
-
     <nav class="site-nav" id="site-nav" data-nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="mission.html">Mission</a>
-      <a href="values.html">Values</a>
-      <a href="work.html">Our Work</a>
-      <a href="founder.html">Founder</a>
-      <a href="newsletter.html">Newsletter</a>
-      <a href="contact.html">Contact</a>
+      <a href="index.html" data-i18n="nav-home">Home</a>
+      <a href="about.html" data-i18n="nav-about">About</a>
+      <a href="mission.html" data-i18n="nav-mission">Mission</a>
+      <a href="values.html" data-i18n="nav-values">Values</a>
+      <a href="work.html" data-i18n="nav-work">Our Work</a>
+      <a href="team.html" data-i18n="nav-team">Team</a>
+      <a href="founder.html" data-i18n="nav-founder">Founder</a>
+      <a href="newsletter.html" data-i18n="nav-newsletter">Newsletter</a>
+      <a href="contact.html" data-i18n="nav-contact">Contact</a>
     </nav>
+    <div class="lang-switch" aria-label="Language selector">
+      <button class="lang-btn active" data-lang="en">EN</button>
+      <button class="lang-btn" data-lang="fr">FR</button>
+    </div>
   </header>
 
   <main>
     <section class="page-title-banner" style="background-image: url('assets/images/yemc-teamwork-table.jpg');">
       <div class="section-heading">
-        <p class="eyebrow">Get Involved</p>
-        <h2>Support young changemakers in Mugara.</h2>
+        <p class="eyebrow" data-i18n="contact-eyebrow">Get Involved</p>
+        <h2 data-i18n="contact-h2">Support young changemakers in Mugara.</h2>
       </div>
     </section>
 
     <section class="section contact">
       <div class="contact-grid">
         <div class="contact-copy">
-          <h3>Partner, volunteer, mentor, or share an opportunity.</h3>
-          <p>
-            YEMC welcomes people and organizations who want to support youth education, entrepreneurship, leadership, English learning, and community growth.
-          </p>
+          <h3 data-i18n="contact-h3">Partner, volunteer, mentor, or share an opportunity.</h3>
+          <p data-i18n="contact-p">YEMC welcomes people and organizations who want to support youth education, entrepreneurship, leadership, English learning, and community growth.</p>
           <ul>
-            <li>Invite YEMC to opportunities or trainings</li>
-            <li>Support learning materials and activities</li>
-            <li>Volunteer as a mentor or guest speaker</li>
-            <li>Help connect youth to scholarships, internships, or programs</li>
+            <li data-i18n="contact-li1">Invite YEMC to opportunities or trainings</li>
+            <li data-i18n="contact-li2">Support learning materials and activities</li>
+            <li data-i18n="contact-li3">Volunteer as a mentor or guest speaker</li>
+            <li data-i18n="contact-li4">Help connect youth to scholarships, internships, or programs</li>
           </ul>
           <div class="contact-details">
             <a href="mailto:yemchangemakers@gmail.com">yemchangemakers@gmail.com</a>
@@ -67,25 +64,26 @@
           <div class="social-links" aria-label="YEMC pages">
             <a href="https://www.linkedin.com/in/young-entrepreneurs-mugara-changemakers-yemc-7a089b392/">LinkedIn</a>
             <a href="https://www.instagram.com/yemc_2025?igsh=YXJ6NHQzcDRwNHBz">Instagram</a>
+            <a href="https://www.facebook.com">Facebook</a>
           </div>
-          <a class="button primary support-button" href="mailto:yemchangemakers@gmail.com?subject=Support%20YEMC">Donate Now</a>
+          <a class="button primary support-button" href="mailto:yemchangemakers@gmail.com?subject=Donation%20for%20YEMC" data-i18n="contact-btn-donate">Donate Now</a>
         </div>
         <form class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
           <input type="hidden" name="_subject" value="New message from YEMC website">
           <label>
-            Name
+            <span data-i18n="contact-label-name">Name</span>
             <input type="text" name="name" placeholder="Your name" required>
           </label>
           <label>
-            Email
+            <span data-i18n="contact-label-email">Email</span>
             <input type="email" name="email" placeholder="you@example.com" required>
           </label>
           <label>
-            Message
+            <span data-i18n="contact-label-message">Message</span>
             <textarea name="message" rows="5" placeholder="Tell us how you would like to get involved" required></textarea>
           </label>
-          <button class="button primary" type="submit">Contact YEMC</button>
-          <p class="note">Messages submitted here go straight to yemchangemakers@gmail.com. You can also email us directly.</p>
+          <button class="button primary" type="submit" data-i18n="contact-btn-submit">Contact YEMC</button>
+          <p class="note" data-i18n="contact-note">Messages submitted here go straight to yemchangemakers@gmail.com. You can also email us directly.</p>
         </form>
       </div>
     </section>
@@ -94,9 +92,9 @@
   <footer class="site-footer">
     <p>&copy; <span data-year></span> Young Entrepreneurs Mugara Changemakers. All rights reserved.</p>
     <div>
-      <a href="index.html">Home</a>
-      <a href="founder.html">Founder</a>
-      <a href="mailto:yemchangemakers@gmail.com">Email YEMC</a>
+      <a href="index.html" data-i18n="footer-home">Home</a>
+      <a href="founder.html" data-i18n="footer-founder">Founder</a>
+      <a href="mailto:yemchangemakers@gmail.com" data-i18n="footer-email">Email YEMC</a>
     </div>
   </footer>
 </body>

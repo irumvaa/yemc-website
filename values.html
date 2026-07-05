@@ -7,66 +7,65 @@
   <meta name="description" content="The values that guide Young Entrepreneurs Mugara Changemakers (YEMC) in Mugara, Burundi.">
   <link rel="icon" href="assets/images/yemc-logo.jpg">
   <link rel="stylesheet" href="styles.css">
+  <script defer src="translations.js"></script>
   <script defer src="script.js"></script>
 </head>
 <body>
   <header class="site-header founder-header is-scrolled" data-header>
     <a class="brand" href="index.html" aria-label="YEMC home">
       <img class="brand-logo" src="assets/images/yemc-logo.jpg" alt="">
-      <span>
-        <strong>YEMC</strong>
-        <small>Mugara Changemakers</small>
-      </span>
+      <span><strong>YEMC</strong><small>Mugara Changemakers</small></span>
     </a>
-
     <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" data-nav-toggle>
       <span class="sr-only">Toggle navigation</span>
-      <span></span>
-      <span></span>
-      <span></span>
+      <span></span><span></span><span></span>
     </button>
-
     <nav class="site-nav" id="site-nav" data-nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="mission.html">Mission</a>
-      <a href="values.html">Values</a>
-      <a href="work.html">Our Work</a>
-      <a href="founder.html">Founder</a>
-      <a href="newsletter.html">Newsletter</a>
-      <a href="contact.html">Contact</a>
+      <a href="index.html" data-i18n="nav-home">Home</a>
+      <a href="about.html" data-i18n="nav-about">About</a>
+      <a href="mission.html" data-i18n="nav-mission">Mission</a>
+      <a href="values.html" data-i18n="nav-values">Values</a>
+      <a href="work.html" data-i18n="nav-work">Our Work</a>
+      <a href="team.html" data-i18n="nav-team">Team</a>
+      <a href="founder.html" data-i18n="nav-founder">Founder</a>
+      <a href="newsletter.html" data-i18n="nav-newsletter">Newsletter</a>
+      <a href="contact.html" data-i18n="nav-contact">Contact</a>
     </nav>
+    <div class="lang-switch" aria-label="Language selector">
+      <button class="lang-btn active" data-lang="en">EN</button>
+      <button class="lang-btn" data-lang="fr">FR</button>
+    </div>
   </header>
 
   <main>
     <section class="page-title-banner" style="background-image: url('assets/images/page-bg-women-signs.jpg');">
       <div class="section-heading">
-        <p class="eyebrow">Our Values</p>
-        <h2>The principles that guide how YEMC learns, leads, and serves.</h2>
+        <p class="eyebrow" data-i18n="values-eyebrow">Our Values</p>
+        <h2 data-i18n="values-banner-h2">The principles that guide how YEMC learns, leads, and serves.</h2>
       </div>
     </section>
 
     <section class="section values">
       <div class="values-grid">
         <article>
-          <h3>Perseverance</h3>
-          <p>Continued effort to achieve something regardless of difficulties, failure, or opposition.</p>
+          <h3 data-i18n="val1-h3">Perseverance</h3>
+          <p data-i18n="val1-p">Continued effort to do or achieve something regardless of difficulties, failure, or opposition.</p>
         </article>
         <article>
-          <h3>Innovation</h3>
-          <p>Coming up with new ideas and projects that can benefit the future generation.</p>
+          <h3 data-i18n="val2-h3">Innovation</h3>
+          <p data-i18n="val2-p">Being able to come up with new ideas and projects that can benefit the future generation.</p>
         </article>
         <article>
-          <h3>Servant Leadership</h3>
-          <p>Understanding that leadership is not about being served, but serving others with commitment and passion.</p>
+          <h3 data-i18n="val3-h3">Servant Leadership</h3>
+          <p data-i18n="val3-p">Understanding that being a leader is not about being served but instead is about serving others with commitment and passion.</p>
         </article>
         <article>
-          <h3>Empathy</h3>
-          <p>Being able to put yourself in other people's shoes and understand their needs.</p>
+          <h3 data-i18n="val4-h3">Empathy</h3>
+          <p data-i18n="val4-p">Being able to put yourself in others' shoes and understand their needs.</p>
         </article>
         <article>
-          <h3>Integrity</h3>
-          <p>Being honest and holding strong moral principles in every situation.</p>
+          <h3 data-i18n="val5-h3">Integrity</h3>
+          <p data-i18n="val5-p">The quality of being honest and having strong moral or ethical principles that you consistently adhere to, regardless of the situation.</p>
         </article>
       </div>
     </section>
@@ -75,9 +74,9 @@
   <footer class="site-footer">
     <p>&copy; <span data-year></span> Young Entrepreneurs Mugara Changemakers. All rights reserved.</p>
     <div>
-      <a href="index.html">Home</a>
-      <a href="founder.html">Founder</a>
-      <a href="mailto:yemchangemakers@gmail.com">Email YEMC</a>
+      <a href="index.html" data-i18n="footer-home">Home</a>
+      <a href="founder.html" data-i18n="footer-founder">Founder</a>
+      <a href="mailto:yemchangemakers@gmail.com" data-i18n="footer-email">Email YEMC</a>
     </div>
   </footer>
 </body>

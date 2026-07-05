@@ -7,48 +7,45 @@
   <meta name="description" content="Meet Don Bertille Uwingabire, CEO and Founder of Young Entrepreneurs Mugara Changemakers.">
   <link rel="icon" href="assets/images/yemc-logo.jpg">
   <link rel="stylesheet" href="styles.css">
+  <script defer src="translations.js"></script>
   <script defer src="script.js"></script>
 </head>
 <body>
   <header class="site-header founder-header is-scrolled" data-header>
     <a class="brand" href="index.html" aria-label="YEMC home">
       <img class="brand-logo" src="assets/images/yemc-logo.jpg" alt="">
-      <span>
-        <strong>YEMC</strong>
-        <small>Mugara Changemakers</small>
-      </span>
+      <span><strong>YEMC</strong><small>Mugara Changemakers</small></span>
     </a>
-
     <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" data-nav-toggle>
       <span class="sr-only">Toggle navigation</span>
-      <span></span>
-      <span></span>
-      <span></span>
+      <span></span><span></span><span></span>
     </button>
-
     <nav class="site-nav" id="site-nav" data-nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="mission.html">Mission</a>
-      <a href="values.html">Values</a>
-      <a href="work.html">Our Work</a>
-      <a href="founder.html">Founder</a>
-      <a href="newsletter.html">Newsletter</a>
-      <a href="contact.html">Contact</a>
+      <a href="index.html" data-i18n="nav-home">Home</a>
+      <a href="about.html" data-i18n="nav-about">About</a>
+      <a href="mission.html" data-i18n="nav-mission">Mission</a>
+      <a href="values.html" data-i18n="nav-values">Values</a>
+      <a href="work.html" data-i18n="nav-work">Our Work</a>
+      <a href="team.html" data-i18n="nav-team">Team</a>
+      <a href="founder.html" data-i18n="nav-founder">Founder</a>
+      <a href="newsletter.html" data-i18n="nav-newsletter">Newsletter</a>
+      <a href="contact.html" data-i18n="nav-contact">Contact</a>
     </nav>
+    <div class="lang-switch" aria-label="Language selector">
+      <button class="lang-btn active" data-lang="en">EN</button>
+      <button class="lang-btn" data-lang="fr">FR</button>
+    </div>
   </header>
 
   <main>
     <section class="founder-hero">
       <div class="founder-hero-copy">
-        <p class="eyebrow">Founder Story</p>
-        <h1>Meet Don Bertille Uwingabire</h1>
-        <p>
-          Founder and CEO of YEMC, a passionate entrepreneur, leader, youth advocate, women's empowerment champion, and environmentalist.
-        </p>
+        <p class="eyebrow" data-i18n="founder-eyebrow">Founder Story</p>
+        <h1 data-i18n="founder-h1">Meet Don Bertille Uwingabire</h1>
+        <p data-i18n="founder-tagline">Founder and CEO of YEMC, a passionate entrepreneur, leader, youth advocate, women's empowerment champion, and environmentalist.</p>
         <div class="hero-actions">
-          <a class="button primary" href="https://www.linkedin.com/in/don-bertille-uwingabire-04b945242/">Connect on LinkedIn</a>
-          <a class="button secondary founder-secondary" href="#founder-story">Read Her Story</a>
+          <a class="button primary" href="https://www.linkedin.com/in/don-bertille-uwingabire-04b945242/" data-i18n="founder-btn-linkedin">Connect on LinkedIn</a>
+          <a class="button secondary founder-secondary" href="#founder-story" data-i18n="founder-btn-story">Read Her Story</a>
         </div>
       </div>
       <div class="founder-portrait">
@@ -58,8 +55,8 @@
 
     <section class="section founder-profile" id="founder-story">
       <div class="section-heading">
-        <p class="eyebrow">CEO & Founder</p>
-        <h2>Leadership rooted in learning, service, and community transformation.</h2>
+        <p class="eyebrow" data-i18n="founder-profile-eyebrow">CEO &amp; Founder</p>
+        <h2 data-i18n="founder-profile-h2">Leadership rooted in learning, service, and community transformation.</h2>
       </div>
       <div class="founder-profile-grid">
         <div class="founder-bio">
@@ -74,7 +71,7 @@
           </p>
         </div>
         <div class="credential-panel">
-          <h3>Leadership Journey</h3>
+          <h3 data-i18n="founder-cred-h3">Leadership Journey</h3>
           <ul>
             <li>Tujenge Scholar</li>
             <li>Entrepreneur</li>
@@ -96,16 +93,16 @@
       </div>
       <blockquote class="founder-quote">
         <p>
-          “The program started in July 2025. I created this program because I had participated in many leadership programs and wanted to share my knowledge with people in my community who did not have the same opportunities.”
+          "The program started in July 2025. I created this program because I had participated in many leadership programs and wanted to share my knowledge with people in my community who did not have the same opportunities."
         </p>
-        <cite>Don Bertille Uwingabire</cite>
+        <cite data-i18n="founder-quote-cite">Don Bertille Uwingabire</cite>
       </blockquote>
     </section>
 
     <section class="section founder-impact">
       <div class="section-heading">
-        <p class="eyebrow">YEMC Impact</p>
-        <h2>Building confidence, critical thinking, and community action in Mugara.</h2>
+        <p class="eyebrow" data-i18n="founder-impact-eyebrow">YEMC Impact</p>
+        <h2 data-i18n="founder-impact-h2">Building confidence, critical thinking, and community action in Mugara.</h2>
       </div>
       <div class="impact-story-grid">
         <article>
@@ -119,29 +116,28 @@
           <p>YEMC fundraised and supported 20 girls and 20 unemployed single mothers with reusable sanitary pads and food allowances.</p>
         </article>
         <article>
-          <span>Recently</span>
+          <span>April 2026</span>
           <h3>Youth Training</h3>
-          <p>YEMC trained 50 young people in personal development and design thinking, encouraging them to improve themselves and their community.</p>
+          <p>YEMC trained 40 young people in personal development and design thinking, encouraging them to improve themselves and their community.</p>
         </article>
       </div>
     </section>
 
     <section class="section founder-closing">
       <div>
-        <p class="eyebrow">Force For Good</p>
-        <h2>“There is still much more to be done for the continued growth of both the program and the community.”</h2>
+        <p class="eyebrow" data-i18n="founder-closing-eyebrow">Force For Good</p>
+        <h2 data-i18n="founder-closing-h2">"There is still much more to be done for the continued growth of both the program and the community."</h2>
       </div>
-      <p>
-        YEMC is proud of the progress already being made in Mugara, Rumonge, Burundi, and remains committed to helping young people lead change without waiting for others to take action.
-      </p>
+      <p data-i18n="founder-closing-p">YEMC is proud of the progress already being made in Mugara, Rumonge, Burundi, and remains committed to helping young people lead change without waiting for others to take action.</p>
     </section>
   </main>
 
   <footer class="site-footer">
     <p>&copy; <span data-year></span> Young Entrepreneurs Mugara Changemakers. All rights reserved.</p>
     <div>
-      <a href="index.html">Home</a>
-      <a href="mailto:yemchangemakers@gmail.com">Email YEMC</a>
+      <a href="index.html" data-i18n="footer-home">Home</a>
+      <a href="founder.html" data-i18n="footer-founder">Founder</a>
+      <a href="mailto:yemchangemakers@gmail.com" data-i18n="footer-email">Email YEMC</a>
     </div>
   </footer>
 </body>
